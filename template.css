@@ -376,7 +376,7 @@ body {
     margin: auto;
     width: 980px;
     text-align: left;
-    overflow: auto;
+    overflow: hidden;
 }
 
 #sub-footer h3 {
@@ -407,16 +407,14 @@ body {
     float: left;
     padding: 0;
     margin: 0 15px 0 0;
-    background: none;
+    width: 110px;
 }
 
 .social a,
 .social a:link,
 .social a:visited {
     display: block;
-    background: url(../global/img/template/footer-social.png) 50% 0 no-repeat;
     width: 110px;
-    padding: 60px 0 0 0;
     font: italic 18px Georgia, serif;
     line-height: 18px;
     text-align: center;
@@ -425,6 +423,7 @@ body {
     -webkit-transition: text-shadow 0.2s ease-out;
     -o-transition: text-shadow 0.2s ease-out;
     transition: text-shadow 0.2s ease-out;
+    margin-bottom: 10px;
 }
 
 .social a:hover,
@@ -436,15 +435,21 @@ body {
     transition: text-shadow 0.1s ease-out;
 }
 
-#footer-twitter a {
+.footer-icon {
+    background: url(../global/img/template/footer-social.png) 50% 0 no-repeat;
+    height: 60px;
+    width: 110px;
+}
+
+.footer-icon.twitter {
     background-position: 50% -115px;
 }
 
-#footer-facebook a {
+.footer-icon.facebook {
     background-position: 50% -215px;
 }
 
-#footer-connect a {
+.footer-icon.connect {
     background-position: 50% -315px;
 }
 

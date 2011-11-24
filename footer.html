@@ -3,15 +3,24 @@
     {% block sub_footer %}
       <h3>{{ _('Let’s be <span>friends!</span>') }}</h3>
       <ul class="social">
-        <li id="footer-twitter"><a href="http://twitter.com/firefox">
-          {{ _('Twitter') }}
-        </a></li>
-        <li id="footer-facebook"><a href="http://Facebook.com/Firefox">
-          {{ _('Facebook') }}
-        </a></li>
-        <li id="footer-connect"><a href="http://www.mozilla.com/firefox/connect/">
-          {{ _('More Ways to Connect') }}
-        </a></li>
+        <li id="footer-twitter">
+          <div class="footer-icon twitter"></div>
+          <a href="http://twitter.com/firefox">
+            {{ _('Twitter') }}
+          </a>
+        </li>
+        <li id="footer-facebook">
+          <div class="footer-icon facebook"></div>
+          <a href="http://Facebook.com/Firefox">
+            {{ _('Facebook') }}
+          </a>
+        </li>
+        <li id="footer-connect">
+          <div class="footer-icon connect"></div>
+          <a href="http://www.mozilla.com/firefox/connect/">
+            {{ _('More Ways to Connect') }}
+          </a>
+        </li>
       </ul>
 
       <p id="sub-footer-newsletter">
